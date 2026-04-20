@@ -323,6 +323,22 @@
       font-weight: 700;
     }
 
+    .pdf-frame {
+      width: 100%;
+      height: 800px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: rgba(255,255,255,0.5);
+      overflow: hidden;
+    }
+
+    .pdf-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
     form {
       display: grid;
       gap: 0.95rem;
@@ -420,6 +436,10 @@
         font-size: 1rem;
         max-width: 36rem;
       }
+
+      .pdf-frame {
+        height: 650px;
+      }
     }
 
     @media (max-width: 640px) {
@@ -456,6 +476,10 @@
       .btn {
         padding: 0.75rem 0.95rem;
         font-size: 0.76rem;
+      }
+
+      .pdf-frame {
+        height: 500px;
       }
 
       main section {
@@ -631,33 +655,32 @@
             </div>
           </article>
 
-          <!-- New row of 3 photos -->
-          <article class="gallery-item" data-caption="Trey Yesavage, New Hampshire Fisher Cats (Toronto Blue Jays Affiliate).">
-            <img src="images/pitcher-1.jpg" alt="Trey Yesavage, New Hampshire Fisher Cats (Toronto Blue Jays Affiliate)." />
+          <article class="gallery-item" data-caption="Add your caption here for gallery image 13.">
+            <img src="images/new-photo-1.jpg" alt="New gallery photo 1" />
             <div class="gallery-overlay">
               <div class="gallery-text">
-                <div class="gallery-title">Minor League Baseball</div>
-                <div class="gallery-desc">Trey Yesavage, New Hampshire Fisher Cats (Toronto Blue Jays Affiliate).</div>
+                <div class="gallery-title">New Gallery Title 1</div>
+                <div class="gallery-desc">Add your description here.</div>
               </div>
             </div>
           </article>
 
-          <article class="gallery-item" data-caption="Thomas Sosa, Chespeake Baysox (Baltimore Orioles Affiliate).">
-            <img src="images/baseball-1.jpg" alt="Thomas Sosa, Chespeake Baysox (Baltimore Orioles Affiliate)." />
+          <article class="gallery-item" data-caption="Add your caption here for gallery image 14.">
+            <img src="images/new-photo-2.jpg" alt="New gallery photo 2" />
             <div class="gallery-overlay">
               <div class="gallery-text">
-                <div class="gallery-title">Minor League Baseball</div>
-                <div class="gallery-desc">Thomas Sosa, Chespeake Baysox (Baltimore Orioles Affiliate).</div>
+                <div class="gallery-title">New Gallery Title 2</div>
+                <div class="gallery-desc">Add your description here.</div>
               </div>
             </div>
           </article>
 
-          <article class="gallery-item" data-caption="Portland Sea Dogs (Boston Red Sox Affiliate).">
-            <img src="images/snow-1.jpg" alt="Portland Sea Dogs (Boston Red Sox Affiliate)." />
+          <article class="gallery-item" data-caption="Add your caption here for gallery image 15.">
+            <img src="images/new-photo-3.jpg" alt="New gallery photo 3" />
             <div class="gallery-overlay">
               <div class="gallery-text">
-                <div class="gallery-title">Minor League Baseball</div>
-                <div class="gallery-desc">Portland Sea Dogs (Boston Red Sox Affiliate).</div>
+                <div class="gallery-title">New Gallery Title 3</div>
+                <div class="gallery-desc">Add your description here.</div>
               </div>
             </div>
           </article>
@@ -689,10 +712,6 @@
                 <div>New Hampshire, USA</div>
               </div>
               <div>
-                <div class="detail-label">Galleries:</div>
-                <div><a href="https://linktr.ee/AnchorAwayPhoto">View Galleries</a></div>
-              </div>
-              <div>
                 <div class="detail-label">Available Across:</div>
                 <div>New England | Eastern Canada</div>
               </div>
@@ -701,16 +720,34 @@
                 <div>Freestyle Skiing, Alpine Skiing, Snowboarding, Baseball, Soccer, Hockey</div>
               </div>
               <div>
-                <div class="detail-label">Instagram:</div>
-                <div><a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a></div>
-              </div>
-              <div>
                 <div class="detail-label">Available For:</div>
                 <div>Team or Athlete Coverage, Media Coverage, Editorial, Brand Partnerships</div>
+              </div>
+              <div>
+                <div class="detail-label">Instagram:</div>
+                <div><a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="galleries">
+      <div class="container">
+        <div class="section-header">
+          <h2>Galleries</h2>
+          <p>Scroll through the gallery PDF below.</p>
+        </div>
+
+        <div class="pdf-frame">
+          <iframe src="images/AnchorAway_ShortPortfolio_Spring26.pdf" title="Gallery PDF"></iframe>
+        </div>
+
+        <p class="small-note">
+          Having trouble viewing it?
+          <a href="images/AnchorAway_ShortPortfolio_Spring26.pdf.pdf" target="_blank" rel="noopener noreferrer">Open the PDF in a new tab</a>.
+        </p>
       </div>
     </section>
 
@@ -736,11 +773,15 @@
           <div class="card details">
             <div>
               <div class="detail-label">Email</div>
-              <div>AnchorAwayPhoto@gmail.com</div>
+              <div><a href="mailto:AnchorAwayPhoto@gmail.com">AnchorAwayPhoto@gmail.com</a></div>
             </div>
             <div>
               <div class="detail-label">Instagram</div>
               <div><a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a></div>
+            </div>
+            <div>
+              <div class="detail-label">Galleries</div>
+              <div><a href="#galleries">View Galleries</a></div>
             </div>
           </div>
         </div>
