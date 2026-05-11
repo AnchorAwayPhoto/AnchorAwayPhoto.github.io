@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portrait Photography | Anchor Away Photography | New Hampshire & New England</title>
+  <meta
+    name="description"
+    content="Portrait photography by Anchor Away Photography, offering clean, natural, and story-driven portrait sessions for athletes, seniors, professionals, couples, and individuals across New Hampshire and New England."
+  />
+  <meta
+    name="keywords"
+    content="Anchor Away Photography portraits, New Hampshire portrait photographer, New England portrait photographer, athlete portraits, senior portraits, professional portraits, lifestyle portraits"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://anchorawayphoto.com/portraits.html" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portrait Photography | Anchor Away Photography" />
+  <meta
+    property="og:description"
+    content="Clean, natural, and story-driven portrait photography across New Hampshire and New England."
+  />
+  <meta property="og:url" content="https://anchorawayphoto.com/portraits.html" />
+  <meta property="og:site_name" content="Anchor Away Photography" />
+  <meta property="og:image" content="https://anchorawayphoto.com/images/portrait-sample-1.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portrait Photography | Anchor Away Photography" />
+  <meta
+    name="twitter:description"
+    content="Portrait sessions for athletes, seniors, professionals, couples, and individuals across New Hampshire and New England."
+  />
+  <meta name="twitter:image" content="https://anchorawayphoto.com/images/portrait-sample-1.jpg" />
+
+  <style>
+    :root {
+      --bg: #eef3f7;
+      --bg-deep: #dfe8ee;
+      --text: #0f1720;
+      --muted: #4f6170;
+      --line: rgba(15, 23, 32, 0.12);
+      --accent: #12293d;
+      --accent-2: #27465e;
+      --card: rgba(255, 255, 255, 0.3);
+      --overlay: rgba(7, 16, 24, 0.46);
+      --max: 1120px;
+      --shadow: 0 18px 45px rgba(11, 24, 36, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.5;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.40), rgba(255,255,255,0.18)),
+        linear-gradient(135deg, #f6fafc 0%, #eaf1f5 42%, #dbe6ed 100%);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(238, 243, 247, 0.82);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-size: 1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.15rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.93rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a:hover,
+    .instagram-link:hover {
+      color: var(--text);
+    }
+
+    .instagram-link {
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      transition: 0.2s ease;
+    }
+
+    main section {
+      padding: 5rem 0;
+    }
+
+    .hero-section {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-copy-block {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-2);
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 6vw, 5.2rem);
+      line-height: 0.92;
+      margin: 0 0 1rem 0;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      max-width: 9ch;
+    }
+
+    .hero-text {
+      max-width: 42rem;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 0 0 1.4rem 0;
+    }
+
+    .hero-image-frame {
+      width: 100%;
+      height: 520px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      background: #0f2333;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #0f2333;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      margin-top: 0.3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.95rem 1.25rem;
+      border: 1px solid currentColor;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #f4f8fb;
+      border-color: var(--accent);
+    }
+
+    .btn-secondary {
+      color: var(--accent);
+      background: transparent;
+      border-color: var(--accent);
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header h2 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+
+    .section-header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 42rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.36);
+      border: 1px solid rgba(255,255,255,0.35);
+      box-shadow: var(--shadow);
+      padding: 1.35rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .portrait-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .about-text {
+      color: var(--muted);
+      max-width: 48rem;
+      margin: 0;
+    }
+
+    .details {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .detail-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-2);
+      margin-bottom: 0.15rem;
+      font-weight: 700;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: #c9d5de;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.045);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: end;
+      padding: 1rem;
+      background: linear-gradient(180deg, rgba(0,0,0,0.03) 30%, var(--overlay) 100%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-text {
+      color: #f5f9fc;
+    }
+
+    .gallery-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.15rem;
+    }
+
+    .gallery-desc {
+      font-size: 0.92rem;
+      color: rgba(245, 249, 252, 0.9);
+    }
+
+    .book-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1.25rem;
+    }
+
+    form {
+      display: grid;
+      gap: 0.95rem;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(15, 23, 32, 0.12);
+      background: rgba(255,255,255,0.85);
+      font: inherit;
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .small-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 0.75rem;
+    }
+
+    footer {
+      padding: 1.5rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 12, 18, 0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      z-index: 2000;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox-inner {
+      max-width: min(1000px, 92vw);
+      width: 100%;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .lightbox img {
+      width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      background: #0e1a24;
+    }
+
+    .lightbox-caption {
+      color: #edf5fb;
+      font-size: 0.98rem;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 0.7rem 0.9rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 900px) {
+      .hero-layout,
+      .portrait-intro,
+      .book-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-image-frame {
+        height: 420px;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 6vw, 3.8rem);
+        max-width: 10ch;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+        max-width: 36rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-section {
+        padding: 3rem 0 2rem;
+      }
+
+      .hero-image-frame {
+        height: 360px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+        max-width: 10ch;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .btn {
+        padding: 0.75rem 0.95rem;
+        font-size: 0.76rem;
+      }
+
+      main section {
+        padding: 4rem 0;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Anchor Away Photography Portraits",
+    "url": "https://anchorawayphoto.com/portraits.html",
+    "image": "https://anchorawayphoto.com/images/portrait-sample-1.jpg",
+    "description": "Portrait photography by Anchor Away Photography for athletes, seniors, professionals, couples, and individuals across New Hampshire and New England.",
+    "areaServed": ["New Hampshire", "New England", "Eastern Canada"],
+    "sameAs": ["https://instagram.com/AnchorAwayPhoto"]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand">Anchor Away Photography</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="portraits.html">Portraits</a>
+        <a href="index.html#about">About Me</a>
+        <a href="#book">Book Portraits</a>
+        <a class="instagram-link" href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="top">
+      <div class="container hero-layout">
+        <div class="hero-copy-block">
+          <div class="eyebrow">Portrait Photography</div>
+          <h1 class="hero-title">Portraits with motion, place & personality.</h1>
+          <p class="hero-text">
+            Anchor Away Photography offers portrait sessions for athletes, seniors, professionals, couples, and individuals looking for clean, natural, and story-driven images. Whether we are shooting in the mountains, on campus, downtown, or at a meaningful location, each session is built around making portraits that feel polished, personal, and true to you.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#gallery">View Samples</a>
+            <a class="btn btn-secondary" href="#book">Book Portraits</a>
+          </div>
+        </div>
+
+        <div class="hero-image-frame">
+          <img src="images/portrait-sample-1.jpg" alt="Portrait photography sample by Anchor Away Photography" class="hero-img" />
+        </div>
+      </div>
+    </section>
+
+    <section id="portrait-info">
+      <div class="container">
+        <div class="section-header">
+          <h2>Portrait Sessions</h2>
+          <p>Clean, natural portraits for people who want images that feel professional without feeling stiff.</p>
+        </div>
+
+        <div class="portrait-intro">
+          <div class="card">
+            <p class="about-text">
+              Portrait sessions are designed to be comfortable, flexible, and visually grounded in your story. Sessions can be built around senior portraits, athlete branding, professional headshots, couples, graduation photos, or lifestyle portraits. The goal is simple: create images that look sharp, feel natural, and give you a gallery you are excited to share.
+            </p>
+          </div>
+
+          <div class="card details">
+            <div>
+              <div class="detail-label">Portrait Types</div>
+              <div>Senior Portraits, Athlete Branding, Graduation, Professional Headshots, Couples, Lifestyle</div>
+            </div>
+            <div>
+              <div class="detail-label">Available Across</div>
+              <div>New Hampshire, New England, and select travel locations</div>
+            </div>
+            <div>
+              <div class="detail-label">Best For</div>
+              <div>Websites, social media, graduation announcements, recruiting profiles, sponsor content, and personal keepsakes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sample Portrait Gallery</h2>
+          <p>A small selection of portrait work. Click any image to view it larger.</p>
+        </div>
+
+        <div class="gallery">
+          <article class="gallery-item" data-caption="Outdoor portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-1.jpg" alt="Outdoor portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Outdoor Portraits</div>
+                <div class="gallery-desc">Natural light portrait session.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-caption="Athlete portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-2.jpg" alt="Athlete portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Athlete Portraits</div>
+                <div class="gallery-desc">Portraits for athletes and personal branding.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-caption="Senior portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-3.jpg" alt="Senior portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Senior Portraits</div>
+                <div class="gallery-desc">Clean, polished senior photos.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-caption="Professional portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-4.jpg" alt="Professional portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Professional Portraits</div>
+                <div class="gallery-desc">Portraits for profiles, websites, and work.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-caption="Lifestyle portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-5.jpg" alt="Lifestyle portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Lifestyle Portraits</div>
+                <div class="gallery-desc">Relaxed portraits in meaningful places.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-item" data-caption="Couples or individual portrait session by Anchor Away Photography.">
+            <img src="images/portrait-sample-6.jpg" alt="Couples or individual portrait session by Anchor Away Photography" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-text">
+                <div class="gallery-title">Personal Sessions</div>
+                <div class="gallery-desc">Simple, personal, story-driven images.</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="container">
+        <div class="section-header">
+          <h2>Book A Portrait Session</h2>
+          <p>Tell me what kind of portraits you are looking for, where you are based, and the general style you want.</p>
+        </div>
+
+        <div class="book-layout">
+          <div class="card">
+            <form id="portraitForm">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <input type="email" id="email" placeholder="Your Email" required />
+
+              <select id="sessionType" required>
+                <option value="">Select Portrait Type</option>
+                <option value="Senior Portraits">Senior Portraits</option>
+                <option value="Athlete Branding">Athlete Branding</option>
+                <option value="Professional Headshots">Professional Headshots</option>
+                <option value="Graduation Portraits">Graduation Portraits</option>
+                <option value="Couples Portraits">Couples Portraits</option>
+                <option value="Lifestyle Portraits">Lifestyle Portraits</option>
+                <option value="Other Portrait Session">Other Portrait Session</option>
+              </select>
+
+              <input type="text" id="location" placeholder="Preferred Location or Town" required />
+              <input type="text" id="date" placeholder="Preferred Date or Timeframe" />
+              <textarea id="message" placeholder="Tell Me About the Portrait Session" required></textarea>
+
+              <button class="btn btn-primary" type="submit">Send Portrait Inquiry</button>
+            </form>
+
+            <p class="small-note">This form opens your email app with a pre-filled inquiry.</p>
+          </div>
+
+          <div class="card details">
+            <div>
+              <div class="detail-label">Email</div>
+              <div><a href="mailto:AnchorAwayPhoto@gmail.com">AnchorAwayPhoto@gmail.com</a></div>
+            </div>
+            <div>
+              <div class="detail-label">Instagram</div>
+              <div><a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a></div>
+            </div>
+            <div>
+              <div class="detail-label">Based In</div>
+              <div>New Hampshire, USA</div>
+            </div>
+            <div>
+              <div class="detail-label">Available For</div>
+              <div>Portraits, athlete branding, senior photos, graduation sessions, and professional headshots</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Anchor Away Photography</div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button">Close</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImage" src="" alt="Expanded portrait image" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('portraitForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const sessionType = document.getElementById('sessionType').value.trim();
+      const location = document.getElementById('location').value.trim();
+      const date = document.getElementById('date').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`Portrait Inquiry: ${sessionType}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nPortrait Type: ${sessionType}\nPreferred Location: ${location}\nPreferred Date or Timeframe: ${date}\n\nMessage:\n${message}`
+      );
+
+      window.location.href = `mailto:AnchorAwayPhoto@gmail.com?subject=${subject}&body=${body}`;
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const caption = item.dataset.caption || '';
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('active');
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+      lightboxCaption.textContent = '';
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
