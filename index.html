@@ -361,22 +361,6 @@
       text-underline-offset: 3px;
     }
 
-    .pdf-frame {
-      width: 100%;
-      height: 800px;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      background: rgba(255,255,255,0.5);
-      overflow: hidden;
-    }
-
-    .pdf-frame iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-
     form {
       display: grid;
       gap: 0.95rem;
@@ -474,10 +458,6 @@
         font-size: 1rem;
         max-width: 36rem;
       }
-
-      .pdf-frame {
-        height: 650px;
-      }
     }
 
     @media (max-width: 640px) {
@@ -516,10 +496,6 @@
         font-size: 0.76rem;
       }
 
-      .pdf-frame {
-        height: 500px;
-      }
-
       main section {
         padding: 4rem 0;
       }
@@ -547,6 +523,7 @@
         <a href="#home">Home</a>
         <a href="#portfolio">Portfolio</a>
         <a href="portraits.html">Portraits</a>
+        <a href="highlight.html">Highlight Reel</a>
         <a href="#about">About Me</a>
         <a href="#book">Book A Shoot</a>
         <a class="instagram-link" href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -774,6 +751,14 @@
           </div>
 
           <div>
+            <div class="detail-label">Highlight Reel:</div>
+            <div>
+              View the Anchor Away Photo Spring 2026 portfolio gallery.
+              <a class="inline-link" href="highlight.html">Open Highlight Reel</a>.
+            </div>
+          </div>
+
+          <div>
             <div class="detail-label">Event Coverage:</div>
             <div>Editorial Photography for World Cups, National Championships, and Gameday.</div>
           </div>
@@ -821,30 +806,16 @@
                 <div><a class="inline-link" href="portraits.html">View Portrait Photography</a></div>
               </div>
               <div>
+                <div class="detail-label">Highlight Reel:</div>
+                <div><a class="inline-link" href="highlight.html">View The Highlight Reel</a></div>
+              </div>
+              <div>
                 <div class="detail-label">Instagram:</div>
                 <div><a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="galleries">
-      <div class="container">
-        <div class="section-header">
-          <h2>The Highlight Reel</h2>
-          <p>Anchor Away Photo Spring 2026 Gallery.</p>
-        </div>
-
-        <div class="pdf-frame">
-          <iframe src="images/AnchorAway_ShortPortfolio_Spring26.pdf" title="Gallery PDF"></iframe>
-        </div>
-
-        <p class="small-note">
-          Want to See The Full Gallery?
-          <a href="images/AnchorAway_ShortPortfolio_Spring26.pdf" target="_blank" rel="noopener noreferrer">Open My Gallery in a New Tab</a>.
-        </p>
       </div>
     </section>
 
@@ -881,6 +852,14 @@
               <div>
                 <a href="portraits.html">
                   View Portrait Sessions
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="detail-label">Highlight Reel</div>
+              <div>
+                <a href="highlight.html">
+                  View The Highlight Reel
                 </a>
               </div>
             </div>
