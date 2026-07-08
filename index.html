@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Anchor Away Photo | Winter Sports Photography </title>
+  <meta
+    name="description"
+    content="Professional winter sports photography by Anchor Away Photo. Winter sports, game-day coverage, athlete branding, and sports-focused storytelling across New England and Eastern Canada."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://anchorawayphoto.com/" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anchor Away Photography | Sports Photographer in New England" />
+  <meta
+    property="og:description"
+    content="Winter sports, game-day coverage, athlete branding, and editorial storytelling across New England and Eastern Canada."
+  />
+  <meta property="og:url" content="https://anchorawayphoto.com/" />
+  <meta property="og:image" content="https://anchorawayphoto.com/images/banner-hero-freestyle.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anchor Away Photo | Winter Sports Photography" />
+  <meta
+    name="twitter:description"
+    content="Winter sports, game-day coverage, athlete branding, and editorial storytelling across New England and Eastern Canada."
+  />
+  <meta name="twitter:image" content="https://anchorawayphoto.com/images/banner-hero-freestyle.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --ink: #0d1115;
+      --paper: #f3f1ec;
+      --paper-deep: #e8e4dc;
+      --white: #ffffff;
+      --muted: #6b6e70;
+      --line: rgba(13, 17, 21, 0.15);
+      --snow: #e7f1f6;
+      --blue: #17364b;
+      --blue-light: #2f5d78;
+      --max: 1320px;
+      --header-height: 78px;
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 18px);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Manrope", Arial, sans-serif;
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    body.menu-open,
+    body.lightbox-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 48px), var(--max));
+      margin-inline: auto;
+    }
+
+    .display {
+      margin: 0;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-weight: 700;
+      line-height: 0.9;
+      letter-spacing: -0.035em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0 0 1rem;
+      color: currentColor;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 34px;
+      height: 1px;
+      content: "";
+      background: currentColor;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+      gap: 3rem;
+      align-items: end;
+      margin-bottom: 2.75rem;
+    }
+
+    .section-heading h2 {
+      max-width: 11ch;
+      font-size: clamp(3.5rem, 8vw, 7.8rem);
+    }
+
+    .section-heading p {
+      margin: 0 0 0.4rem;
+      max-width: 42rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 1000;
+      height: var(--header-height);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      color: var(--white);
+      transition: background 220ms ease, color 220ms ease, border-color 220ms ease;
+    }
+
+    .site-header.scrolled {
+      color: var(--ink);
+      background: rgba(243, 241, 236, 0.94);
+      border-color: var(--line);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .brand {
+      position: relative;
+      z-index: 1002;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: 1.32rem;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 2.2vw, 2rem);
+    }
+
+    .desktop-nav a {
+      position: relative;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .desktop-nav a:not(.nav-cta)::after {
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      left: 0;
+      height: 1px;
+      content: "";
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 180ms ease;
+    }
+
+    .desktop-nav a:hover::after,
+    .desktop-nav a[aria-current="page"]::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .nav-cta {
+      padding: 0.72rem 1rem;
+      border: 1px solid currentColor;
+      transition: background 180ms ease, color 180ms ease;
+    }
+
+    .nav-cta:hover {
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    .site-header.scrolled .nav-cta:hover {
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .menu-toggle {
+      position: relative;
+      z-index: 1002;
+      display: none;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      position: absolute;
+      left: 8px;
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      transition: transform 180ms ease, top 180ms ease;
+    }
+
+    .menu-toggle span:first-child {
+      top: 17px;
+    }
+
+    .menu-toggle span:last-child {
+      top: 27px;
+    }
+
+    .menu-open .menu-toggle span:first-child {
+      top: 22px;
+      transform: rotate(45deg);
+    }
+
+    .menu-open .menu-toggle span:last-child {
+      top: 22px;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 1001;
+      display: grid;
+      align-content: center;
+      padding: 100px 24px 40px;
+      color: var(--white);
+      background: var(--ink);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 180ms ease, visibility 180ms ease;
+    }
+
+    .menu-open .mobile-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-menu nav {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .mobile-menu a {
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: clamp(2.6rem, 13vw, 5rem);
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: end;
+      color: var(--white);
+      background: var(--ink);
+      isolation: isolate;
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      content: "";
+      background:
+        linear-gradient(90deg, rgba(6, 11, 14, 0.76) 0%, rgba(6, 11, 14, 0.26) 58%, rgba(6, 11, 14, 0.18) 100%),
+        linear-gradient(0deg, rgba(6, 11, 14, 0.74) 0%, transparent 48%),
+        url("images/banner-hero-freestyle.jpg") center 34% / cover no-repeat;
+    }
+
+    .hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), transparent 30%);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.55fr);
+      gap: 4rem;
+      align-items: end;
+      width: 100%;
+      padding-top: calc(var(--header-height) + 5rem);
+      padding-bottom: clamp(3rem, 7vw, 6rem);
+    }
+
+    .hero h1 {
+      max-width: 8ch;
+      font-size: clamp(5.2rem, 13vw, 12.5rem);
+      text-wrap: balance;
+    }
+
+    .hero-copy {
+      padding-bottom: 0.65rem;
+    }
+
+    .hero-copy p {
+      margin: 0 0 1.6rem;
+      max-width: 35rem;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 1.35vw, 1.15rem);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      padding: 0.82rem 1.15rem;
+      border: 1px solid transparent;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      transition: transform 180ms ease, color 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
+
+    .btn::after {
+      content: "→";
+      font-size: 1rem;
+      line-height: 1;
+      transition: transform 180ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:hover::after {
+      transform: translateX(4px);
+    }
+
+    .btn-light {
+      color: var(--ink);
+      background: var(--white);
+      border-color: var(--white);
+    }
+
+    .btn-outline-light {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn-dark {
+      color: var(--white);
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .btn-outline-dark {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .proof-strip {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .proof-item {
+      min-height: 128px;
+      display: grid;
+      align-content: center;
+      padding: 1.5rem 2rem;
+      border-right: 1px solid var(--line);
+    }
+
+    .proof-item:first-child {
+      padding-left: 0;
+    }
+
+    .proof-item:last-child {
+      border-right: 0;
+    }
+
+    .proof-label {
+      margin-bottom: 0.35rem;
+      color: var(--muted);
+      font-size: 0.69rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .proof-value {
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .work-section {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-auto-flow: dense;
+      grid-auto-rows: 46px;
+      gap: 14px;
+    }
+
+    .work-card {
+      position: relative;
+      overflow: hidden;
+      color: var(--white);
+      background: #cbd2d6;
+      cursor: zoom-in;
+      isolation: isolate;
+    }
+
+    .work-card::after {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      content: "";
+      background: linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, 0.76) 100%);
+      opacity: 0.76;
+      transition: opacity 220ms ease;
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 480ms cubic-bezier(.2,.7,.2,1);
+    }
+
+    .work-card:hover img {
+      transform: scale(1.035);
+    }
+
+    .work-card:hover::after {
+      opacity: 1;
+    }
+
+    .work-meta {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      padding: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .work-kicker {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.64rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .work-title {
+      display: block;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+      font-weight: 700;
+      line-height: 0.98;
+      text-transform: uppercase;
+    }
+
+    .card-a { grid-column: span 7; grid-row: span 10; }
+    .card-b { grid-column: span 5; grid-row: span 7; }
+    .card-c { grid-column: span 5; grid-row: span 8; }
+    .card-d { grid-column: span 7; grid-row: span 9; }
+    .card-e { grid-column: span 4; grid-row: span 8; }
+    .card-f { grid-column: span 4; grid-row: span 8; }
+    .card-g { grid-column: span 4; grid-row: span 8; }
+    .card-h { grid-column: span 8; grid-row: span 9; }
+    .card-i { grid-column: span 4; grid-row: span 9; }
+
+    /* Additional portfolio slots. The first three favor landscape photographs. */
+    .card-j { grid-column: span 6; grid-row: span 6; }
+    .card-k { grid-column: span 6; grid-row: span 6; }
+    .card-l { grid-column: span 8; grid-row: span 8; }
+    .card-m { grid-column: span 4; grid-row: span 8; }
+
+    .services-section {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .services-section .section-heading p {
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card {
+      display: flex;
+      min-height: 530px;
+      flex-direction: column;
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card:last-child {
+      border-right: 0;
+    }
+
+    .service-number {
+      margin-bottom: auto;
+      color: rgba(255, 255, 255, 0.38);
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .service-card h3 {
+      margin: 0 0 1rem;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: clamp(2.6rem, 4.6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 0.9;
+      text-transform: uppercase;
+    }
+
+    .service-card > p {
+      margin: 0 0 1.4rem;
+      color: rgba(255, 255, 255, 0.67);
+    }
+
+    .service-list {
+      display: grid;
+      gap: 0.65rem;
+      margin: 0 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 0.55rem;
+      align-items: start;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.91rem;
+    }
+
+    .service-list li::before {
+      content: "↳";
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .service-card .btn {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .story-section {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--paper-deep);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      min-height: 720px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .story-image {
+      min-height: 560px;
+      background: var(--blue);
+    }
+
+    .story-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .story-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 5.5rem);
+    }
+
+    .story-copy h2 {
+      max-width: 8ch;
+      margin-bottom: 1.5rem;
+      font-size: clamp(4rem, 7vw, 7rem);
+    }
+
+    .story-copy p {
+      margin: 0 0 1.2rem;
+      color: var(--muted);
+    }
+
+    .experience-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1.5rem;
+      margin: 1.2rem 0 2rem;
+      padding: 1.4rem 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      list-style: none;
+    }
+
+    .experience-list li {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .testimonial {
+      padding: clamp(5rem, 9vw, 8rem) 0;
+      text-align: center;
+      background: var(--snow);
+    }
+
+    .testimonial blockquote {
+      max-width: 1050px;
+      margin: 0 auto;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: clamp(3rem, 7vw, 7rem);
+      font-weight: 600;
+      line-height: 0.98;
+      letter-spacing: -0.025em;
+      text-transform: uppercase;
+    }
+
+    .testimonial p {
+      margin: 1.75rem auto 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .contact-section {
+      position: relative;
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      background: var(--ink);
+      isolation: isolate;
+    }
+
+    .contact-section::before {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      content: "";
+      background:
+        linear-gradient(90deg, rgba(7, 12, 16, 0.9), rgba(7, 12, 16, 0.44)),
+        url("images/aerial-4.jpg") center 42% / cover no-repeat;
+    }
+
+    .contact-section::after {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      content: "";
+      background: linear-gradient(180deg, transparent, rgba(7, 12, 16, 0.44));
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.72fr);
+      gap: clamp(3rem, 8vw, 8rem);
+      align-items: center;
+      padding: 6rem 0;
+    }
+
+    .contact-copy h2 {
+      max-width: 8ch;
+      margin-bottom: 1.3rem;
+      font-size: clamp(5rem, 10vw, 10rem);
+    }
+
+    .contact-copy p {
+      max-width: 38rem;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.05rem;
+    }
+
+    .contact-card {
+      padding: clamp(1.5rem, 4vw, 2.7rem);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      background: rgba(11, 18, 23, 0.74);
+      backdrop-filter: blur(12px);
+    }
+
+    .contact-card form {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .contact-card input,
+    .contact-card textarea {
+      width: 100%;
+      padding: 0.95rem 0;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+      outline: none;
+      color: var(--white);
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .contact-card input::placeholder,
+    .contact-card textarea::placeholder {
+      color: rgba(255, 255, 255, 0.58);
+    }
+
+    .contact-card input:focus,
+    .contact-card textarea:focus {
+      border-bottom-color: var(--white);
+    }
+
+    .contact-card textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-card .btn {
+      margin-top: 0.9rem;
+      justify-self: start;
+    }
+
+    .contact-direct {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      margin-top: 1.2rem;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-direct a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .site-footer {
+      padding: 2.2rem 0;
+      color: rgba(255, 255, 255, 0.65);
+      background: var(--ink);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: none;
+      place-items: center;
+      padding: 76px 80px 34px;
+      color: var(--white);
+      background: rgba(5, 8, 10, 0.96);
+    }
+
+    .lightbox.active {
+      display: grid;
+    }
+
+    .lightbox-figure {
+      max-width: min(1400px, 100%);
+      margin: 0;
+    }
+
+    .lightbox-figure img {
+      width: 100%;
+      max-height: calc(100vh - 160px);
+      object-fit: contain;
+    }
+
+    .lightbox-figure figcaption {
+      margin-top: 0.8rem;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .lightbox-btn {
+      position: absolute;
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: var(--white);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .lightbox-close {
+      top: 18px;
+      right: 18px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-prev { left: 18px; }
+    .lightbox-next { right: 18px; }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 3000;
+      padding: 0.7rem 0.9rem;
+      color: var(--white);
+      background: var(--ink);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1050px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .site-header.menu-contrast,
+      .menu-open .site-header {
+        color: var(--white);
+        background: transparent;
+        border-color: transparent;
+      }
+
+      .hero-content,
+      .section-heading,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        gap: 1.8rem;
+      }
+
+      .hero h1 {
+        max-width: 8.4ch;
+      }
+
+      .hero-copy {
+        max-width: 560px;
+      }
+
+      .section-heading {
+        gap: 1.2rem;
+      }
+
+      .section-heading p {
+        max-width: 600px;
+      }
+
+      .proof-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .proof-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .proof-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .service-card:last-child {
+        border-bottom: 0;
+      }
+
+      .service-number {
+        margin-bottom: 5rem;
+      }
+
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-image {
+        min-height: 65vw;
+        max-height: 720px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        --header-height: 68px;
+      }
+
+      .container {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(6, 11, 14, 0.28) 0%, rgba(6, 11, 14, 0.88) 90%),
+          url("images/banner-hero-freestyle.jpg") 52% center / cover no-repeat;
+      }
+
+      .hero-content {
+        padding-bottom: 2rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(4.1rem, 23vw, 7rem);
+      }
+
+      .hero-copy p {
+        font-size: 0.95rem;
+      }
+
+      .button-row .btn {
+        flex: 1 1 auto;
+      }
+
+      .proof-item {
+        min-height: 108px;
+        padding: 1.2rem;
+      }
+
+      .proof-item:nth-child(odd) {
+        padding-left: 0;
+      }
+
+      .proof-value {
+        font-size: 1.3rem;
+      }
+
+      .editorial-grid {
+        display: block;
+      }
+
+      .work-card {
+        min-height: 68vw;
+        margin-bottom: 12px;
+      }
+
+      .work-card:nth-child(3n+1) {
+        min-height: 92vw;
+      }
+
+      .work-card:nth-child(4n) {
+        min-height: 78vw;
+      }
+
+      .story-grid {
+        min-height: auto;
+      }
+
+      .story-image {
+        min-height: 110vw;
+      }
+
+      .experience-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-section {
+        min-height: auto;
+      }
+
+      .contact-grid {
+        padding: 5rem 0;
+      }
+
+      .contact-copy h2 {
+        font-size: clamp(4.3rem, 22vw, 7rem);
+      }
+
+      .footer-grid {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .lightbox {
+        padding: 70px 12px 30px;
+      }
+
+      .lightbox-prev,
+      .lightbox-next {
+        top: auto;
+        bottom: 14px;
+        transform: none;
+      }
+
+      .lightbox-prev { left: calc(50% - 58px); }
+      .lightbox-next { right: calc(50% - 58px); }
+
+      .lightbox-figure img {
+        max-height: calc(100vh - 190px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Anchor Away Photography",
+    "url": "https://anchorawayphoto.com/",
+    "image": "https://anchorawayphoto.com/images/banner-hero-freestyle.jpg",
+    "description": "New Hampshire professional sports photograpy specializing in winter sports, athlete branding, and team storytelling across New England and Eastern Canada.",
+    "areaServed": ["New Hampshire", "New England", "Quebec", "United States"],
+    "founder": {
+      "@type": "Person",
+      "name": "Tim Hoheneder"
+    },
+    "sameAs": ["https://instagram.com/AnchorAwayPhoto"]
+  }
+  </script>
+  <script>
+    function imageFallback(img) {
+      const original = img.getAttribute('src') || 'missing-image.jpg';
+      const filename = original.split('/').pop();
+      const escapeXml = (value) => value.replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;'
+      })[char]);
+      const label = escapeXml(filename);
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+          <rect width="1600" height="1000" fill="#17364b"/>
+          <rect x="55" y="55" width="1490" height="890" fill="none" stroke="#e7f1f6" stroke-width="5"/>
+          <text x="800" y="450" text-anchor="middle" fill="#f3f1ec" font-family="Arial, sans-serif" font-size="62" font-weight="700">ADD IMAGE</text>
+          <text x="800" y="535" text-anchor="middle" fill="#e7f1f6" font-family="Arial, sans-serif" font-size="34">${label}</text>
+        </svg>`;
+      img.onerror = null;
+      img.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+      img.alt = `Placeholder for ${filename}`;
+    }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Anchor Away Photo home">Anchor Away Photo</a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#top" aria-current="page">Home</a>
+        <a href="#work">Sports</a>
+        <a href="portraits.html">Portraits</a>
+        <a href="highlight.html">Highlight Reel</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Book a Shoot</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#top">Home</a>
+      <a href="#work">Sports</a>
+      <a href="portraits.html">Portraits</a>
+      <a href="highlight.html">Highlight Reel</a>
+      <a href="#about">About</a>
+      <a href="#contact">Book a Shoot</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">New England Sports Photographer</p>
+          <h1 class="display">Photos made for the moment.</h1>
+        </div>
+
+        <div class="hero-copy">
+          <p>
+            Professiona winter sports photography coverage for world-class athletes, teams, and events. Based out of the Granite State in New Hampshire and available across North America.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-light" href="#work">View the Work</a>
+            <a class="btn btn-outline-light" href="#contact">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Coverage experience">
+      <div class="container proof-grid">
+        <div class="proof-item">
+          <span class="proof-label">Specialty</span>
+          <span class="proof-value">Professional Winter Sports</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-label">Photography Coverage</span>
+          <span class="proof-value">Game Day + Competition Coverage</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-label">Built For</span>
+          <span class="proof-value">Athletes, Teams + NIL Brands</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-label">Available Across</span>
+          <span class="proof-value">New England, Quebec, and the Rest of North America</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Setting the Scene</p>
+            <h2 class="display">Speed. Emotion. Story.</h2>
+          </div>
+          <p>
+            From the start gate to the finish line, every event I photograph is approached as a complete story: Defining Action, The Top Scores, Quiet Preparation, and The Moments People Remember.
+          </p>
+        </div>
+
+        <div class="editorial-grid" id="gallery">
+          <figure class="work-card card-a" tabindex="0" data-caption="2026 Canadian Freestyle National Championships — Saint-Sauveur, Québec">
+            <img onerror="imageFallback(this)" src="images/portrait-web-1.jpg" alt="Canadian National Team Athelte and 2026 Olympian, Julien Veil, competing at the Canadian Freestyle National Championships" loading="eager" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Freestyle Moguls</span>
+              <span class="work-title">2026 Canadian National Championships</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-b" tabindex="0" data-caption="FIS Freestyle Moguls World Cup — Val St-Côme, Québec">
+            <img onerror="imageFallback(this)" src="images/aerial-web-2.jpg" alt="Freestyle moguls athlete at the FIS Val St-Côme World Cup" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">FIS Freestyle World Cup</span>
+              <span class="work-title">Val St-Côme</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-c" tabindex="0" data-caption="FIS Freestyle Aerials World Cup Finals — Lake Placid, New York">
+            <img onerror="imageFallback(this)" src="images/aerial-3.jpg" alt="Freestyle aerials athlete at the Lake Placid World Cup Finals" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">FIS Freestlye World Cup</span>
+              <span class="work-title">2026 World Cup Finals, Lake Placid</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-d" tabindex="0" data-caption="FIS Freestyle Moguls World Cup — Waterville Valley, New Hampshire">
+            <img onerror="imageFallback(this)" src="images/mogul-web-1.jpg" alt="Moguls skier at the Waterville Valley World Cup" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">FIS Freestyle World Cup</span>
+              <span class="work-title">Waterville Valley</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-e" tabindex="0" data-caption="NCAA Skiing National Championships — Dartmouth College">
+            <img onerror="imageFallback(this)" src="images/skiing-2.jpg" alt="Alpine skier at the NCAA Skiing National Championships" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">NCAA National Championships</span>
+              <span class="work-title">Dartmouth Skiway</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-f" tabindex="0" data-caption="World Pro Ski Tour — Tenney Mountain, New Hampshire">
+            <img onerror="imageFallback(this)" src="images/skiing-1.jpg" alt="Athlete racing on the World Pro Ski Tour" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">World Pro Ski Tour</span>
+              <span class="work-title">Tenney Mountain</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-g" tabindex="0" data-caption="Snowboardcross NorAm Tour — Waterville Valley, New Hampshire">
+            <img onerror="imageFallback(this)" src="images/action-1.jpg" alt="Snowboardcross athlete racing in Waterville Valley" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Hotshots Nor-Am Tour</span>
+              <span class="work-title">Waterville Valley</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-h" tabindex="0" data-caption="Thomas Sosa — Chesapeake Baysox">
+            <img onerror="imageFallback(this)" src="images/baseball-1.jpg" alt="Thomas Sosa playing for the Chesapeake Baysox" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Minor League Baseball</span>
+              <span class="work-title">Chesapeake Baysox</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-i" tabindex="0" data-caption="Athlete portrait photographed for idOne Moguls Skis">
+            <img onerror="imageFallback(this)" src="images/moguls-2.jpg" alt="Winter sports athlete portrait photographed for idOne Moguls Skis" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">idOne Moguls Skis</span>
+              <span class="work-title">Thibaud Mouille</span>
+            </figcaption>
+          </figure>
+
+
+          <!-- Additional portfolio slots: swap the image src, caption, and labels as your portfolio evolves. -->
+          <figure class="work-card card-j" tabindex="0" data-caption="FIS Freestyle Moguls World Cup--2026 Waterville Valley, New Hampshire">
+            <img onerror="imageFallback(this)" src="images/team.jpg" alt="Team moment during elite winter sports competition" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Quiet Moments Culture</span>
+              <span class="work-title">Between the Runs</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-k" tabindex="0" data-caption="2026 Canadian Freestyle National Championships — Saint-Sauveur, Québec">
+            <img onerror="imageFallback(this)" src="images/jump-1.jpg" alt="Freestyle skier airborne during competition" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">The Roar of the Crowd</span>
+              <span class="work-title">Built for Flight</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-l" tabindex="0" data-caption="FIS Freestyle Moguls World Cup — Waterville Valley, New Hampshire">
+            <img onerror="imageFallback(this)" src="images/waterville-1.jpg" alt="Freestyle moguls competition at Waterville Valley" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Athlete Spotlight</span>
+              <span class="work-title">Bringing Home the Gold</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card card-m" tabindex="0" data-caption="Caden Rose — Portland Sea Dogs">
+            <img onerror="imageFallback(this)" src="images/Point1.jpg" alt="Caden Rose playing for the Portland Sea Dogs" loading="lazy" />
+            <figcaption class="work-meta">
+              <span class="work-kicker">Minor League Baseball</span>
+              <span class="work-title">Portland Sea Dogs</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ways to Work Together</p>
+            <h2 class="display">Coverage with a game plan.</h2>
+          </div>
+          <p>
+            Every assignment is scoped around how my photography will actually be used, whether that means for posting to social media, editorial coverage, NIL and sponsorship content, or a season-long archive.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Event Coverage</h3>
+            <p>Focused coverage for a competition, game, tournament, championship, or media day.</p>
+            <ul class="service-list">
+              <li>Action, atmosphere, and defining moments</li>
+              <li>High-resolution online gallery</li>
+              <li>Editorial and social-ready delivery</li>
+              <li>Rapid-turnaround options available</li>
+            </ul>
+            <a class="btn btn-outline-light" href="#contact" data-package="Event Coverage">Request a Quote</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Athlete Story</h3>
+            <p>A portrait and action package built around one athlete, their identity, and their goals.</p>
+            <ul class="service-list">
+              <li>Competition or training coverage</li>
+              <li>Environmental and athlete portraits</li>
+              <li>NIL, athlete branding, and sponsor-focused imagery</li>
+              <li>Vertical and horizontal crops for digital use</li>
+            </ul>
+            <a class="btn btn-outline-light" href="#contact" data-package="Athlete Story">Request a Quote</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Season Story</h3>
+            <p>Multi-event coverage that creates a consistent visual library across a season or campaign.</p>
+            <ul class="service-list">
+              <li>Flexible event and competition schedule</li>
+              <li>Consistent visual direction across deliverables</li>
+              <li>Team, federation, and brand usage options</li>
+              <li>Custom campaign and archive planning</li>
+            </ul>
+            <a class="btn btn-outline-light" href="#contact" data-package="Season Story">Build a Package</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="about">
+      <div class="container story-grid">
+        <div class="story-image">
+          <img onerror="imageFallback(this)" src="images/portrait-web-2.jpg" alt="Tim Hoheneder, photographer behind Anchor Away Photography" loading="lazy" />
+        </div>
+
+        <div class="story-copy">
+          <p class="eyebrow">Behind the Camera</p>
+          <h2 class="display">I know the mountain.</h2>
+          <p>
+            My name is Tim Hoheneder and I am a New Hampshire-based sports photographer and former collegiate snowsports athlete. My background helps me anticipate the action, provide proven event knowledge, and work comfortably in the weather and terrain where winter sports happen.
+          </p>
+          <p>
+            My goal is not simply to document who competed, but to create photographs that make the speed, pressure, personality, and atmosphere of the event feel immediate and memorable.
+          </p>
+
+          <ul class="experience-list" aria-label="Selected coverage experience">
+            <li>FIS World Cups</li>
+            <li>NCAA Championships</li>
+            <li>World Pro Ski Tour</li>
+            <li>Freestyle Canada</li>
+            <li>Worcester Wanderers FC</li>
+            <li>Olympic Athletes</li>
+          </ul>
+
+          <div class="button-row">
+            <a class="btn btn-dark" href="#contact">Work With Me</a>
+            <a class="btn btn-outline-dark" href="highlight.html">View Highlight Reel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial" aria-label="Brand statement">
+      <div class="container">
+        <blockquote>“The best winter sports images do more than stop the action. They make the moment flow through you.”</blockquote>
+        <p>Anchor Away Photography</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Start a Project</p>
+          <h2 class="display">Let’s tell the whole story together.</h2>
+          <p>
+            Share the event, athlete, team, location, and intended use. I will follow up with availability, a recommended coverage plan, and a custom quote.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <form id="contactForm">
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required />
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="Your email" required />
+            <input type="text" id="project" name="project" placeholder="Event, athlete, or team" required />
+            <textarea id="message" name="message" placeholder="Tell me about the assignment, date, location, and how the images will be used." required></textarea>
+            <button class="btn btn-light" type="submit">Send Inquiry</button>
+          </form>
+
+          <div class="contact-direct">
+            <a href="mailto:AnchorAwayPhoto@gmail.com">AnchorAwayPhoto@gmail.com</a>
+            <a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">@AnchorAwayPhoto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <span id="year"></span> Anchor Away Photography</div>
+      <div class="footer-links">
+        <a href="#work">Sports</a>
+        <a href="portraits.html">Portraits</a>
+        <a href="highlight.html">Highlight Reel</a>
+        <a href="https://instagram.com/AnchorAwayPhoto" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded portfolio image" aria-hidden="true">
+    <button class="lightbox-btn lightbox-close" id="lightboxClose" type="button" aria-label="Close lightbox">×</button>
+    <button class="lightbox-btn lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">←</button>
+    <figure class="lightbox-figure">
+      <img onerror="imageFallback(this)" id="lightboxImage" src="" alt="Expanded portfolio image" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-btn lightbox-next" id="lightboxNext" type="button" aria-label="Next image">→</button>
+  </div>
+
+  <script>
+    const body = document.body;
+    const header = document.getElementById('siteHeader');
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    function updateHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }
+
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    function setMenu(open) {
+      body.classList.toggle('menu-open', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      mobileMenu.setAttribute('aria-hidden', String(!open));
+    }
+
+    menuToggle.addEventListener('click', () => {
+      setMenu(!body.classList.contains('menu-open'));
+    });
+
+    mobileLinks.forEach(link => link.addEventListener('click', () => setMenu(false)));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const projectInput = document.getElementById('project');
+    document.querySelectorAll('[data-package]').forEach(link => {
+      link.addEventListener('click', () => {
+        projectInput.value = link.dataset.package;
+      });
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const project = projectInput.value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`Photography Inquiry: ${project}`);
+      const bodyText = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nProject: ${project}\n\nAssignment details:\n${message}`
+      );
+
+      window.location.href = `mailto:AnchorAwayPhoto@gmail.com?subject=${subject}&body=${bodyText}`;
+    });
+
+    const galleryItems = Array.from(document.querySelectorAll('.work-card'));
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    let activeIndex = 0;
+
+    function showLightbox(index) {
+      activeIndex = (index + galleryItems.length) % galleryItems.length;
+      const item = galleryItems[activeIndex];
+      const image = item.querySelector('img');
+
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      lightboxCaption.textContent = item.dataset.caption || '';
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden', 'false');
+      body.classList.add('lightbox-open');
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightbox.setAttribute('aria-hidden', 'true');
+      body.classList.remove('lightbox-open');
+      lightboxImage.src = '';
+      galleryItems[activeIndex].focus();
+    }
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => showLightbox(index));
+      item.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          showLightbox(index);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', () => showLightbox(activeIndex - 1));
+    lightboxNext.addEventListener('click', () => showLightbox(activeIndex + 1));
+
+    lightbox.addEventListener('click', event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        if (body.classList.contains('lightbox-open')) closeLightbox();
+        if (body.classList.contains('menu-open')) setMenu(false);
+      }
+
+      if (body.classList.contains('lightbox-open')) {
+        if (event.key === 'ArrowLeft') showLightbox(activeIndex - 1);
+        if (event.key === 'ArrowRight') showLightbox(activeIndex + 1);
+      }
+    });
+  </script>
+</body>
+</html>
